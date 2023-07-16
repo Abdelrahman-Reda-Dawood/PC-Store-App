@@ -1,0 +1,377 @@
+@import url(CSS/font.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif ;
+}
+
+h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+h3{
+    color: cornflowerblue;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: cornflowerblue;
+}
+
+h5{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+h6{
+    color: #D8D8D8;
+}
+
+p{
+    color: white;
+}
+p.featured{
+    color: black;
+    font-size: 17px;
+}
+p h4{
+    color: rgb(255, 255, 255);
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition:  0.3s ease;
+}
+
+button:hover{
+    background-color:#000000;
+    color: cornflowerblue;
+}
+
+hr{
+    width: 50px;
+    height: 2px;
+    background-color: cornflowerblue;
+}
+.star{
+    padding: 10px 0;
+}
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+.navbar{
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.2);
+}
+
+.navbar ,.white{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav li a i{
+    padding: 0 30px;
+    color: black;
+    transition:  0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav li a i:hover,
+.navbar-light .navbar-nav li a i.active
+{
+    color: rgb(78, 139, 251) ;
+    font-size:18px ;
+    font-weight: 700;
+}
+
+
+.navbar i{
+    font-size: 1.2rem;
+    padding:  0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.navbar-nav li a i{
+    color: rgb(0, 0, 0);
+}
+
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+/*Mobile Nav  */
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+@media only screen and (max-width: 991px)
+{
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: cornflowerblue;
+    }
+
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar{
+    color: #fff ;
+    }
+
+    #navbarSupportedContent > ul {
+        margin:1rem ;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+    padding: 10px 0;
+    }
+}
+
+#home{
+    background-image: url(images/wallpaper5.jpg) ;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 80px center;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: flex-start;
+}
+#home button{
+    background-color:cornflowerblue ;
+    color: rgb(255, 255, 255);
+}
+#home button:hover{
+    background-color: black;
+    color: cornflowerblue;
+}
+
+#home span{
+    color:white;
+}
+#home span {
+    color: cornflowerblue;
+}
+
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100% ;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+#new .one .details:hover{
+    cursor: pointer;
+    background-color:rgba(82, 82, 82,0.5) ;
+}
+
+#new .one .details button{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #3a3833;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+
+#new .one .details button:hover{
+    color: cornflowerblue;
+    border-bottom:  1px solid white;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+
+/* Products */
+.product
+{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition:  0.3s all;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.product:hover img{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.product .buy-btn{
+    background: cornflowerblue;
+    transform:  translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+    margin-top: 10px;
+}
+.product:hover .buy-btn{
+    transform:  translateY(0);
+    opacity: 1;
+}
+.product .buy-btn:hover{
+    color: cornflowerblue;
+    background-color: black;
+}
+
+#banner{
+    background-image: url(images/wallpaper4.jpg) ;
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner h1,#banner h4{
+    color: rgb(255, 255, 255);
+}
+
+#banner button{
+    background-color: #f49a03;
+    color: black;
+}
+#banner button:hover{
+background-color: black;
+color: goldenrod;
+
+}
+
+footer{
+    background-color: #2c2c2ce7;
+}
+
+footer h5{
+    color: cornflowerblue;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer h6{
+    color: cornflowerblue;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+}
+
+footer li a:hover
+{
+    color: cornflowerblue;
+    font-size: 15px;
+}
+
+footer p{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+footer .copyright a
+{
+    color: rgb(255, 255, 255);
+    width: 38px;
+    height: 38px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+
+footer .copyright a:hover{
+    background-color: rgb(0, 0, 0);
+}
+

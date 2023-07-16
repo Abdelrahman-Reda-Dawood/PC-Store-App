@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product Details</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    </link>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href="Style.css">
+
+    <style>
+        h2 {
+            color: rgb(0, 0, 0);
+        }
+
+        h6 {
+            color: rgb(194, 183, 199);
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        .small-img-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+
+        .sproduct select {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .sproduct input {
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+
+        }
+
+        .page-item .page-link {
+            border-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+            <img onclick="window.location.href='pcgamingbuilds.html';" src="images/footer.png" alt=""
+                style="width: 140px; cursor: pointer;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pcgamingbuilds.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa fa-search fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa fa-shopping-cart fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><a href="login.html"><i class="fa fa-user-circle-o"></i></a></a>
+                    </li>
+            </div>
+        </div>
+    </nav><!-- /NAVBAR -->
+
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1 " src="images/cpu/pro1.png" id="MainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="images/cpu/pro2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/cpu/pro3.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/cpu/pro4.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/cpu/pro5.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Home / Ryzen Proccessor</h6>
+                <h3 class="py-4">AMD CPU's</h3>
+                <h4>4,200.00 EGP</h4>
+                <select class="my-3">
+                    <option>Select Type</option>
+                    <option>Tray</option>
+                    <option>Box</option>
+                </select>
+                <input type="number" value="1">
+                <button class="buy-btn">Add To Cart</button>
+                <h4 class="mt-5 mb-5">Product Details</h4>
+                <span>AMD Ryzen 7 3rd Gen - RYZEN 7 3700X Matisse (Zen 2) 8-Core
+                    3.6 GHz (4.4 GHz Max Boost) Socket AM4 65W DDR4 Support
+                    100-100000071BOX Desktop Processor.</span>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Related -->
+    <section id="featured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Related Products</h3>
+            <hr class="mx-auto">
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/amd-pro.png" alt="" style="height: 260px; width: 260px;">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">AMD ryzen 5 3600</h5>
+                <h4 class="p-price">3,100.00 EGP</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid" src="images/rtx.png" alt="" style="height: 260px; width: 260px;">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">RTX 3060ti</h5>
+                <h4 class="p-price">15,200.00 EGP</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid" src="images/mb.jpg" alt="" style="height: 260px; width: 260px;">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">Motheboard Z490</h5>
+                <h4 class="p-price">3,600.00 EGP</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid" src="images/case3.png" alt="" style="height: 260px; width: 260px;">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">XPG DeathAdder Series</h5>
+                <h4 class="p-price">1,800.00 EGP</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- /Related -->
+
+
+    <!-- Footer -->
+    <footer id="footer" class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="images/footer.png" alt="" style="width: 140px;">
+                <p class="pt-3">Pick Parts.<br> Build Your PC. <br> Compare and Share.
+                    <br>Get latest news & special sales
+                </p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">INFORMATION</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#"> Delivery Information</a></li>
+                    <li><a href="#"> Privacy Policy</a></li>
+                    <li><a href="#"> Terms & Conditions</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">CONTACT US</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 SAQR QURISH, MA'ADI.</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>01114595373</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">EMAIL</h6>
+                    <p>bussiness-irl@gmail.com.</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">CONFIGURE</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/b&w1.png" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/b&w2.png" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/b&w3.png" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/b&w4.png" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/b&w5.png" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="images/b&w6.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="images/pay.png" alt="" style="height: 50px;">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>Copyright &copy;2021. all rights reserved.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+
+    <script src="JavaScript/jquery.min.js"></script>
+    <script src="JavaScript/popper.min.js"></script>
+    <script src="JavaScript/bootstrap.min.js"></script>
+
+    <!-- Switching Images -->
+    <script>
+        var MainImg = document.getElementById('MainImg');
+        var smallimg = document.getElementsByClassName('small-img');
+
+        smallimg[0].onclick = function () {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function () {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            MainImg.src = smallimg[3].src;
+        }
+    </script> <!-- /Switching Images -->
+
+    <!-- Smooth Scrolling -->
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1200, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+    </script>
+    <!-- /Smooth Scrolling -->
+</body>
+
+</html>
